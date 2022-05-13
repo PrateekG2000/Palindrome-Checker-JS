@@ -1,0 +1,19 @@
+// This would be my way of normally checking for palindrome    
+// function isPalindrome(word){
+//     var splt = word.split("");
+//     var prev = splt.reverse();
+//     var rev  = prev.join("")
+//     if (word != rev){
+//         return false;
+//     }
+//     return true;
+//}
+ //If you are looking for a function that iterates through the word itself then
+ function isPalindrome(word){
+     for (i = 0; i< word.length/2;i++){
+         if (word[i] != word[word.length- 1 - i ]){
+             return false;
+         }
+     }
+     return true;
+ }
